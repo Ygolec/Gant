@@ -1,11 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@infectoone/vue-ganttastic': ^2.1.4
   '@mdi/font': ^7.1.96
   '@pinia/nuxt': ^0.4.6
   '@prisma/client': ^4.10.1
   '@vuepic/vue-datepicker': ^3.6.5
   date-fns: ^2.29.3
+  dayjs: ^1.11.7
   nuxt: ^3.0.0
   pinia: ^2.0.29
   prisma: ^4.10.1
@@ -13,11 +15,13 @@ specifiers:
   vuetify: ^3.1.2
 
 dependencies:
+  '@infectoone/vue-ganttastic': 2.1.4_dayjs@1.11.7
   '@mdi/font': 7.1.96
   '@pinia/nuxt': 0.4.6
   '@prisma/client': 4.10.1_prisma@4.10.1
   '@vuepic/vue-datepicker': 3.6.5
   date-fns: 2.29.3
+  dayjs: 1.11.7
   pinia: 2.0.29
   prisma: 4.10.1
   sass: 1.57.1
@@ -335,6 +339,18 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@infectoone/vue-ganttastic/2.1.4_dayjs@1.11.7:
+    resolution: {integrity: sha512-rhHA033HIJeXCHG3VDYpBS1O0qZduQovpUvzfkFggn0Hb7KejPjetoHDyP8+B1LQMb62cok8SFgM6roRihSzSg==}
+    peerDependencies:
+      dayjs: ^1.11.5
+      vue: ^3.2.40
+    dependencies:
+      '@vueuse/core': 9.13.0
+      dayjs: 1.11.7
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
 
   /@ioredis/commands/1.2.0:
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
@@ -805,6 +821,10 @@ packages:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: true
 
+  /@types/web-bluetooth/0.0.16:
+    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
+    dev: false
+
   /@unhead/dom/1.0.15:
     resolution: {integrity: sha512-W3P9eGazfQPMZTG4ryb5oOA02Z4o16Jxo8DAihF/7Xmg/FVYY5Up9p9et7Nbb6AKNgt1PEz3Sp0xBaw+F6Uyjw==}
     dependencies:
@@ -999,6 +1019,18 @@ packages:
       date-fns-tz: 1.3.8_date-fns@2.29.3
     dev: false
 
+  /@vueuse/core/9.13.0:
+    resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
+    dependencies:
+      '@types/web-bluetooth': 0.0.16
+      '@vueuse/metadata': 9.13.0
+      '@vueuse/shared': 9.13.0
+      vue-demi: 0.13.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
   /@vueuse/head/1.0.22_vue@3.2.45:
     resolution: {integrity: sha512-YmUdbzNdCnhmrAFxGnJS+Rixj+swE+TQC9OEaYDHIro6gE7W11jugcdwVP00HrA4WRQhg+TOQ4YcY2oL/PP1hw==}
     peerDependencies:
@@ -1010,6 +1042,19 @@ packages:
       '@unhead/vue': 1.0.15_vue@3.2.45
       vue: 3.2.45
     dev: true
+
+  /@vueuse/metadata/9.13.0:
+    resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
+    dev: false
+
+  /@vueuse/shared/9.13.0:
+    resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
+    dependencies:
+      vue-demi: 0.13.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@zhead/schema/1.0.9:
     resolution: {integrity: sha512-MBubVXXEJX86ZBL6CDK0rYi1mC82zuben1MwwAEe98EFN1w4Oy0l2roJaM51MwQEvZ+WTi6o4lCxUShtLQJk8A==}
@@ -1609,6 +1654,10 @@ packages:
   /date-fns/2.29.3:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
+    dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /debug/2.6.9:

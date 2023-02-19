@@ -11,11 +11,13 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
+    "@infectoone/vue-ganttastic": "^2.1.4",
     "@mdi/font": "^7.1.96",
     "@pinia/nuxt": "^0.4.6",
     "@prisma/client": "^4.10.1",
     "@vuepic/vue-datepicker": "^3.6.5",
     "date-fns": "^2.29.3",
+    "dayjs": "^1.11.7",
     "pinia": "^2.0.29",
     "prisma": "^4.10.1",
     "sass": "^1.57.1",
